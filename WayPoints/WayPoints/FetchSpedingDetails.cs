@@ -31,7 +31,8 @@ namespace WayPoints
             try
             {
                 lblError.Visible = false;
-                using (StreamReader r = new StreamReader(@"D:\VisualStudioExamples\WayPoints\WayPoints\waypoints.json"))
+                string path = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
+                using (StreamReader r = new StreamReader(Path.GetFullPath(Path.Combine(path,@"..\..\waypoints.json"))))
                 {
                     string json = r.ReadToEnd();
                     wayPoints = JsonConvert.DeserializeObject<List<WayPoints>>(json);
