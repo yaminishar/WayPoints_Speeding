@@ -112,7 +112,7 @@ namespace WayPoints
             try
             {
                 lblError.Visible = false;
-                lblDurationSpeeding.Text = Math.Round(speedingTime,2).ToString() + " m/s";
+                lblDurationSpeeding.Text = Math.Round(speedingTime,2).ToString() + " seconds";
             }
             catch (Exception ex)
             {
@@ -142,7 +142,7 @@ namespace WayPoints
             try
             {
                 lblError.Visible = false;
-                lblTotalDuration.Text = Math.Round(totalTime,2).ToString() + " m/s";
+                lblTotalDuration.Text = Math.Round(totalTime,2).ToString() + " seconds";
             }
             catch (Exception ex)
             {
