@@ -1,4 +1,4 @@
-# WayPoints_Speeding testMohapatra
+# WayPoints_Speeding test
 Springworks assignments
 This is a home assignment for recruitment candidates to Springworks.
 
